@@ -1,7 +1,7 @@
 {
   "name": "app-store",
   "vendor": "extensions",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "title": "VTEX App Store",
   "description": "Discover and install the best VTEX Apps",
   "dependencies": {
@@ -17,7 +17,8 @@
   "builders": {
     "messages": "1.x",
     "store": "0.x",
-    "react": "3.x"
+    "react": "3.x",
+    "docs": "0.x"
   },
   "scripts": {
     "postreleasy": "vtex publish --verbose"
