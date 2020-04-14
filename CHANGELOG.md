@@ -7,6 +7,10 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 
 ## [Unreleased]
 
+### Fixed
+
+- Product page error while elements are being rendered concurrently
+
 ## [1.0.3] - 2019-12-03
 
 ### Added
