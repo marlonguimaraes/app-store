@@ -7,6 +7,10 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 
 ## [Unreleased]
 
+### Fixed
+
+- Home search with limited results. Now it can contain up to 50 apps
+
 ## [1.0.4] - 2020-04-14
 
 ### Fixed
