@@ -1,6 +1,6 @@
 {
   "name": "vtex.extensions",
-  "version": "0.0.0",
+  "version": "1.0.4",
   "dependencies": {
     "apollo-client": "^2.5.1",
     "classnames": "^2.2.6",
