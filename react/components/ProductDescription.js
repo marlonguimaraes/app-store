@@ -113,8 +113,8 @@ class ProductDescription extends Component {
   watchScroll = () => {
     const scroll = window.pageYOffset
     const scrollHeight = document.body.scrollHeight
-    const footerSize = document.getElementById('extension-store-footer')
-      .offsetHeight
+    const footer = document.getElementById('extension-store-footer')
+    const footerSize = (footer && footer.offsetHeight) || 0
     const fixed =
       document.documentElement.offsetHeight > window.innerHeight
         ? scroll < scrollHeight - footerSize - window.innerHeight
