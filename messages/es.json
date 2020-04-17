@@ -6,7 +6,7 @@
   "extensions.back": "Volver",
   "extensions.reviewOrder": "Ver su pedido",
   "extensions.confirmText":
-    "haciendo clic en '{confirmButton}' usted está de acuerdo con los {termsOfService} y con la {privacyPolice} de la app",
+    "haciendo clic en \"{confirmButton}\" usted está de acuerdo con los {termsOfService} y con la {privacyPolice} de la app",
   "extensions.termsOfService": "términos de servicio de la app store",
   "extensions.privacyPolice": "política de privacidad",
   "extensions.confirmButton": "confirmar pedido e iniciar instalación",
