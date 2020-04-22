@@ -6,7 +6,7 @@
   "extensions.back": "Back",
   "extensions.reviewOrder": "Review your order",
   "extensions.confirmText":
-    "by clicking in '{confirmButton}' you are agreeing to the {termsOfService} and app {privacyPolice}",
+    "by clicking in \"{confirmButton}\" you are agreeing to the {termsOfService} and app {privacyPolice}",
   "extensions.termsOfService": "app store terms of service",
   "extensions.privacyPolice": "privacy policy",
   "extensions.confirmButton": "confirm order and begin installation",
