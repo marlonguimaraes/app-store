@@ -34,7 +34,7 @@ class SearchBox extends Component {
   render() {
     const { searchValue, shouldHaveBorder } = this.state
     return (
-      <div className="w-100 h-100">
+      <div className="w-100 h-100 ph5-ns">
         <div className="flex flex-row w-100 bg-white gray">
           <div className="flex items-center bb bw1 b--rebel-pink ph3-ns ph6-s pv3">
             <SearchIcon colorFill="gray" />

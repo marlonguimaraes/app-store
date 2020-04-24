@@ -76,31 +76,33 @@ class AppItem extends Component {
     return (
       <div
         onClick={this.handleClick}
-        className={`link no-underline db mt5-s mt0-ns ma4-s ma5-ns ${
-          isShelf ? '' : 'w-90-s w-50-m w-30-l'
-        } ${isComing ? '' : 'pointer card-hover'}`}
+        className={`link no-underline db pt5-s pt0-ns pa4-s pa5-ns ${
+          isShelf ? '' : 'w-90-s w-50-m w-33-l'
+        }`}
       >
-        <Card>
-          <div className="flex flex-row near-black">
-            <AppIcon imageUrl={imageUrl} name={name} />
-            <div className="w-100 ml5 flex flex-column justify-center lh-copy">
-              <div className="title-height-s h2-ns overflow-y-hidden f5-s f4-ns fw5 mb4-ns">
-                {name}
-              </div>
-              {!isComing && (
-                <div className="w-60">
-                  <GetButton appId={appId} homePage />
+        <div className={`w-100 ${isComing ? '' : 'pointer card-hover'}`}>
+          <Card>
+            <div className="flex flex-row near-black">
+              <AppIcon imageUrl={imageUrl} name={name} />
+              <div className="w-100 ml5 flex flex-column justify-center lh-copy">
+                <div className="title-height-s h2-ns overflow-y-hidden f5-s f4-ns fw5 mb4-ns">
+                  {name}
                 </div>
-              )}
+                {!isComing && (
+                  <div className="w-60">
+                    <GetButton appId={appId} homePage />
+                  </div>
+                )}
+              </div>
             </div>
-          </div>
-          <div className="description-height ">
-            <div className="mv5 overflow-hidden f5 fw4 dark-gray track-1 block-with-text">
-              {this.getLocaleDescription(shortDescription)}
+            <div className="description-height ">
+              <div className="mv5 overflow-hidden f5 fw4 dark-gray track-1 block-with-text">
+                {this.getLocaleDescription(shortDescription)}
+              </div>
             </div>
-          </div>
-          <AppCategory category={category} seller={seller} homePage />
-        </Card>
+            <AppCategory category={category} seller={seller} homePage />
+          </Card>
+        </div>
       </div>
     )
   }
