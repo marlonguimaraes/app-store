@@ -1,11 +1,11 @@
 import React, { Component } from 'react'
 import { injectIntl, intlShape } from 'react-intl'
 import { Helmet } from 'vtex.render-runtime'
+import { Tag } from 'vtex.styleguide'
 
 import AppGallery from './AppGallery'
 import JumbotronIcon from './components/icons/JumbotronIcon'
 import SearchBox from './components/SearchBox'
-import { Badge } from 'vtex.styleguide'
 
 class Jumbotron extends Component {
   static propTypes = {
@@ -45,7 +45,7 @@ class Jumbotron extends Component {
           <div className="flex-ns w-100 mw9">
             <div className="w-100 pl5 pr6">
             <span className="mr4">
-              <Badge bgColor="#F71963" color="#FFFFFF">Beta</Badge>
+              <Tag bgColor="#F71963" color="#FFFFFF">Beta</Tag>
             </span>
               <div className="f2 fw5 mt5 pb5 lh-title">VTEX App Store</div>
               <div className="w-80-l mt5 mb9-ns f4 fw3 lh-copy">

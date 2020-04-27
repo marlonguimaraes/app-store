@@ -35,7 +35,7 @@ class AppGallery extends Component {
               </div>
             ) : (
               <div
-                className={`mw9 w-100 flex flex-column-s flex-row-l flex-wrap-ns justify-center items-center ${
+                className={`mw9 nh5-ns w-100 flex flex-column-s flex-row-l flex-wrap-ns justify-center items-center ${
                   homePage ? 'relative card-top' : 'mv4'
                 }`}
               >

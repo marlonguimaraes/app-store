@@ -100,7 +100,7 @@ class AppShelf extends Component {
                       scrollByPage={isScrollByPage}
                       defaultItemWidth={DEFAULT_SHELF_ITEM_WIDTH}
                     >
-                      {products.map(product => (
+                      {products.map((product) => (
                         <AppItem
                           key={product.productId}
                           name={product.productName}
@@ -111,7 +111,9 @@ class AppShelf extends Component {
                           }
                           shortDescription={product.description}
                           category={
-                            this.verifyCategories(product.categories) ? product.categories[0] : ''
+                            this.verifyCategories(product.categories)
+                              ? product.categories[0]
+                              : ""
                           }
                           seller={product.brand}
                           appId={product.linkText}
@@ -123,8 +125,8 @@ class AppShelf extends Component {
                   </NoSSR>
                 ) : (
                   <div className="w-100 flex justify-center">
-                    <div className="w-80 flex flex-column-s flex-row-l flex-wrap-ns mv4">
-                      {products.map(product => (
+                    <div className="flex flex-column flex-row-ns flex-wrap-ns mv4 justify-center">
+                      {products.map((product) => (
                         <AppItem
                           key={product.productId}
                           name={product.productName}
@@ -135,7 +137,9 @@ class AppShelf extends Component {
                           }
                           shortDescription={product.description}
                           category={
-                            this.verifyCategories(product.categories) ? product.categories[0] : ''
+                            this.verifyCategories(product.categories)
+                              ? product.categories[0]
+                              : ""
                           }
                           seller={product.brand}
                           appId={product.linkText}
@@ -143,6 +147,8 @@ class AppShelf extends Component {
                           isShelf={isMobileOnly}
                         />
                       ))}
+                      <Filler />
+                      <Filler />
                     </div>
                   </div>
                 )}
@@ -151,9 +157,15 @@ class AppShelf extends Component {
           </div>
         </div>
       </div>
-    )
+    );
   }
 }
+
+/*
+* OBS: This is a workaround to maintain left-alignment in the justified product shelf.
+* The flexbox does not yet support this kind of arrangement
+*/
+const Filler = () => <div className="w-33-ns ph5-ns" />;
 
 const defaultOptions = {
   options: props => ({

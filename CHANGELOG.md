@@ -7,6 +7,10 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 
 ## [Unreleased]
 
+### Changed
+
+- Adjust all product shelves to have the same length
+
 ## [1.0.6] - 2020-04-22
 
 ### Fixed
